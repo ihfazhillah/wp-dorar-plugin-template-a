@@ -1,0 +1,111 @@
+ @import url('https://fonts.googleapis.com/css?family=Amiri');
+
+.dorar-wrapper {
+  font-family: "Amiri", serif;
+  width: 80%;
+  border-right: solid 5px blue;
+  padding: 10px;
+  background-color: #E5E6D0;
+  direction: rtl;
+  font-size: 1.3rem;
+  line-height: 170%;
+  position: relative;
+  margin: 5% auto;
+  border-radius: 5px;
+}
+
+.dorar-hadith-text::before{
+  content: "\275e";
+  font-size: 2rem;
+  vertical-align: top;
+}
+
+.dorar-hadith-text::after{
+  content: "\275d";
+  font-size: 2rem;
+  vertical-align: top;
+}
+
+.dorar-hadith-text::before,
+.dorar-hadith-text::after {
+  opacity: 0.4;
+}
+
+.dorar-hadith-text:hover::before,
+.dorar-hadith-text:hover::after {
+  opacity: 1;
+}
+
+.dorar-hadith-takhrij {
+  direction: ltr;
+}
+
+.dorar-hadith-takhrij::after {
+  content: "\2014";
+}
+
+.dorar-hadith-takhrij button{
+  border:none;
+  background-color: inherit;
+  outline: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.dorar-hadith-takhrij-title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.dorar-hadith-takhrij-result {
+  color: #E5E6D0;
+  margin-top: 15px;
+  max-height: 500px;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding: 10px 15px;
+}
+
+.dorar-hadith-takhrij-wrapper {
+  transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease; 
+  height: 0;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+.animated {
+  padding: 25px 15px;
+  height: auto;
+}
+
+  /* hadith */
+
+.hadith {
+  color: #333;
+}
+
+.hadith-info {
+  color: #8a701c;
+}
+
+.hadith-info .info-subtitle {
+  color: #3e6a13;
+}
+
+.hadith-info .info-subtitle:not(:first-child):not(:nth-child(4)):before{
+  content: "| ";
+  color: red;
+  font-size: 25px;
+}
+
+/* force line break */
+.hadith-info .info-subtitle:nth-child(4):before{
+  content: "\A";
+  white-space:pre;
+}
+
+.search-keys {
+  color: #cc0000;
+}
+
